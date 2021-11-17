@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bodlogo 5</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+        body {
+            width: 100%;
+
+        }
+
+        #boxing {
+            position: absolute;
+            background: red;
+            margin: 10px;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<!-- 5. Вэб сайтруу өглөө ороход ногоон дөрвөлжин дүрсийг зүүн дээд буланд, орой ороход улаан дөрвөлжин дүрсийг баруун доод буланд харагдуул-->
+<body>
+    <div id="boxing"></div>
+    <center><a href="index.html">bodlogo1</a></center>
+    <script>
+        
+        var today = new Date();
+        var time = today.getHours()+":"+today.getMinutes();
+        var hour = today.getHours();
+
+        if (hour < 12 && hour >= 0)
+        {
+            alert("Цаг "+time+" болж байна.");
+            boxing.style.background = "green";
+            boxing.style.left = 0;
+            boxing.style.top = 0;
+        }
+
+        else
+        {
+            alert("Цаг "+time+" болж байна.");
+            boxing.style.background = "red";
+            boxing.style.right = 0;
+            boxing.style.bottom = 0;
+        }
+    </script>
+</body>
+</html>

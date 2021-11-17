@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bodlogo 1</title>
+</head>
+<!-- 1. Вэб сайтад орсон хүний нэрийг асуугаад нэр нь палиндром мөн эсэхийг шалга. -->
+<body>
+	<center>
+		<a href="bodlogo2.html">bodlogo2</a><hr>
+	<script>
+
+		var name = window.prompt("Таны нэр палиндром мөн эсэхийг шалгацгаая. Нэрээ гараас оруулна уу.");
+		document.write('<h1>Сайн уу, ' + name + '.</h1>');
+
+
+		var nameLenght = name.length;
+	if (nameLenght == 1 ) {
+			document.write("Таны нэр палиндром биш.")
+	}
+	else {
+		var rev = '';
+		var i = '';
+		i = nameLenght - 1;
+
+
+		while (i >= 0) {
+			rev = rev + name.charAt(i);
+			i = i - 1;
+		}
+
+
+		if (name == rev) {
+			document.write("Таны нэр палиндром.");
+		}
+		else {
+			document.write("Таны нэр палиндром биш.");
+		}
+	}
+	</script>
+	</center>
+</body>
+</html>

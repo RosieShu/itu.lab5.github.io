@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bodlogo 2</title>
+</head>
+<body> 
+	<center>
+		<a href="bodlogo3.html">bodlogo3</a><hr>
+	<script>
+		/*var num = String(window.prompt("Enter a number."));
+		var uld = 0; 
+		var i = 0;
+		var sum = 0;
+		let number = parseInt(num)
+		var numLenght = num.length;
+
+
+		while (number > 0) {
+			uld = number%10;
+			number = parseInt(number/10);
+			sum = sum + uld;
+		}
+		document.write("<h1>Result = " + sum + "</h1>")*/
+
+			var number;
+			var n;
+			var s=0;
+
+			number = window.prompt("Тоо оруулна уу:");
+			n=number
+			s=n
+				.toString()
+				.split('')
+				.map(Number)
+				.reduce(function(a,b){
+					return a+b;
+				});
+			document.writeln("<h1>Result = "+s+"</h1>");
+	</script>
+	</center>
+</body>
+</html>

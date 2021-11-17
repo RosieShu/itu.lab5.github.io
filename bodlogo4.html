@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bodlogo 4</title>
+</head>
+<!-- 4. Байшин 9 давхар, 3 орцтой, давхартаа 4 айлтай бол гараас өгсөн тоот нь хэддүгээр орцны хэддүгээр давхарын хэд дэх хаалга вэ -->
+<body>
+	<center>
+		<a href="bodlogo5.html">bodlogo5</a><hr>
+	<script>
+		const toot = parseInt(window.prompt("Та 1-ээс 108 хүртлэх тоог оруулна уу."));
+		if (toot > 0 && toot < 109) {
+			if (toot <= 36) {
+				const davhar = parseInt(toot/4.1 + 1);
+				const haalga = toot%4;
+					if (haalga == 0) {
+						document.write("Таны оруулсан "+toot+" тоот нь 1-р орцны " + davhar + "-р давхарын 4-р хаалга байна.");
+					}
+					else {
+						document.write("Таны оруулсан "+toot+" тоот нь 1-р орцны " + davhar + "-р давхарын " + haalga + "-р хаалга байна.");
+					}
+			} else if (toot < 73) {
+				davhar = parseInt((toot-36)/4.1 + 1);
+				haalga = toot%4;
+					if (haalga == 0) {
+						document.write("Таны оруулсан "+toot+" тоот нь 2-р орцны " + davhar + "-р давхарын 4-р хаалга байна.");
+					}
+					else {
+						document.write("Таны оруулсан "+toot+" тоот нь 2-р орцны " + davhar + "-р давхарын " + haalga + "-р хаалга байна.");
+
+					}
+			} else {
+				davhar = parseInt((toot-72)/4.1 + 1);
+				haalga = toot%4;
+					if (haalga == 0) {
+						document.write("Таны оруулсан "+toot+" тоот нь 3-р орцны " + davhar + "-р давхарын 4-р хаалга байна.");
+					}
+					else {
+						document.write("Таны оруулсан "+toot+" тоот нь 3-р орцны " + davhar + "-р давхарын " + haalga + "-р хаалга байна.");
+
+					}
+			}
+		}
+		else {
+			document.write("Шалгах тоот 1-ээс 108-ын хооронд байх ёстой шүү.")
+		}
+	</script>
+	</center>
+</body>
+</html>

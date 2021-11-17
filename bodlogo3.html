@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bodlogo 3</title>
+</head>
+<!-- 3. Чоно 25 км/ц хурдтай, туулай 18 км/ц хурдтай. Гараас өгсөн зайтай байхад хэдэн минут хэдэн секундын дараа гэхэд гүйцэх вэ -->
+<body>
+	<center>
+		<a href="bodlogo4.html">bodlogo4</a><hr>
+	<script>
+		const d = parseInt(window.prompt("Чоно болон туулайн хоорондох зайг метрээр оруулна уу."));
+
+		const t = d * 18/35;
+
+		var minute = parseInt(t/60);
+		var second = parseInt(t%60);
+		document.write("t = "+ minute +" миниут "+ second +" секундэд чоно туулайг гүйцнэ.");
+
+	</script>
+	</center>
+</body>
+</html>
